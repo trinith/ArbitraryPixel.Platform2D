@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\MSTest.TestAdapter.1.4.0\build\net45\MSTest.TestAdapter.props" Condition="Exists('..\packages\MSTest.TestAdapter.1.4.0\build\net45\MSTest.TestAdapter.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{240C8606-57CD-4B53-AD78-6A20436AC5A1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ArbitraryPixel.Platform2D_Tests</RootNamespace>
+    <AssemblyName>ArbitraryPixel.Platform2D_Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">15.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ArbitraryPixel.Common">
+      <HintPath>..\..\bin\ArbitraryPixel.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ArbitraryPixel.Common.Audio, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\ArbitraryPixel.Common.Audio.dll</HintPath>
+    </Reference>
+    <Reference Include="ArbitraryPixel.Common.ContentManagement, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\ArbitraryPixel.Common.ContentManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="ArbitraryPixel.Common.Drawing, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\ArbitraryPixel.Common.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="ArbitraryPixel.Common.Graphics, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\ArbitraryPixel.Common.Graphics.dll</HintPath>
+    </Reference>
+    <Reference Include="ArbitraryPixel.Common.Input, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\ArbitraryPixel.Common.Input.dll</HintPath>
+    </Reference>
+    <Reference Include="ArbitraryPixel.Common.Json">
+      <HintPath>..\..\bin\ArbitraryPixel.Common.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="ArbitraryPixel.Common.Screen, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\ArbitraryPixel.Common.Screen.dll</HintPath>
+    </Reference>
+    <Reference Include="ArbitraryPixel.Common.SimpleFileSystem">
+      <HintPath>..\..\bin\ArbitraryPixel.Common.SimpleFileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Core.4.4.0\lib\net45\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MSTest.TestFramework.1.4.0\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MSTest.TestFramework.1.4.0\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework, Version=3.7.1.189, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MonoGame.Framework.WindowsDX.3.7.1.189\lib\net45\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="NSubstitute, Version=4.2.0.0, Culture=neutral, PublicKeyToken=92dd2e9066daa5ca, processorArchitecture=MSIL">
+      <HintPath>..\packages\NSubstitute.4.2.0\lib\net45\NSubstitute.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.4.2.0\lib\net45\SharpDX.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct2D1, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.Direct2D1.4.2.0\lib\net45\SharpDX.Direct2D1.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D11, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.Direct3D11.4.2.0\lib\net45\SharpDX.Direct3D11.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D9, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.Direct3D9.4.2.0\lib\net45\SharpDX.Direct3D9.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.DXGI, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.DXGI.4.2.0\lib\net45\SharpDX.DXGI.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Mathematics, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.Mathematics.4.2.0\lib\net45\SharpDX.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.MediaFoundation, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.MediaFoundation.4.2.0\lib\net45\SharpDX.MediaFoundation.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.XAudio2, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.XAudio2.4.2.0\lib\net45\SharpDX.XAudio2.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.XInput, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.XInput.4.2.0\lib\net45\SharpDX.XInput.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard1.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.2\lib\portable-net45+win8+wp8+wpa81\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animation\FloatAnimationSetPoint_Tests.cs" />
+    <Compile Include="Animation\FloatValueAnimation_Tests.cs" />
+    <Compile Include="Animation\AnimationCollection_Tests.cs" />
+    <Compile Include="Asset\AssetLoader_Tests.cs" />
+    <Compile Include="Audio\MusicController_Tests.cs" />
+    <Compile Include="Audio\AudioManager_Tests.cs" />
+    <Compile Include="Audio\SoundController_Tests.cs" />
+    <Compile Include="BuildInfo\BuildInfoOverlayLayerModel_Tests.cs" />
+    <Compile Include="BuildInfo\BuildInfoOverlayLayer_Tests.cs" />
+    <Compile Include="BuildInfo\BuildInfoOverlayLayer_ColourConstructor_Tests.cs" />
+    <Compile Include="Config\JsonConfigStore_Tests.cs" />
+    <Compile Include="Engine\SimpleComponentContainer_Tests.cs" />
+    <Compile Include="Engine\UniqueIdGenerator_Tests.cs" />
+    <Compile Include="Engine\EngineBase_Tests.cs" />
+    <Compile Include="Entity\GameEntityBase_Tests.cs" />
+    <Compile Include="Entity\EntityContainerBase_Tests.cs" />
+    <Compile Include="Extensions_Assert.cs" />
+    <Compile Include="Layer\LayerBase_Tests.cs" />
+    <Compile Include="Scene\SceneBase_Tests.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scene\SceneBase_ProtectedPassThrough_Tests.cs" />
+    <Compile Include="Asset\AssetBank_Tests.cs" />
+    <Compile Include="Entity\EntityBase_Tests.cs" />
+    <Compile Include="Entity\EntityBase_ProtectedPassThrough_Tests.cs" />
+    <Compile Include="Text\TextObject_Tests.cs" />
+    <Compile Include="Text\TextFormatProcessor_Tests.cs" />
+    <Compile Include="Text\TextFormatValueHandlerManager_Tests.cs" />
+    <Compile Include="Text\TextObjectBuilder_Tests.cs" />
+    <Compile Include="Text\TextObjectRenderer_Tests.cs" />
+    <Compile Include="Text\TextDefinition_Tests.cs" />
+    <Compile Include="Text\ValueHandlers\ColourValueHandler_Tests.cs" />
+    <Compile Include="Text\ValueHandlers\DecimalValueHandler_Tests.cs" />
+    <Compile Include="Text\ValueHandlers\StringValueHandler_Tests.cs" />
+    <Compile Include="Text\ValueHandlers\TextLineAlignmentValueHandler_Tests.cs" />
+    <Compile Include="Theme\ThemeBase_Tests.cs" />
+    <Compile Include="Theme\ThemeManagerBase_Tests.cs" />
+    <Compile Include="Theme\ThemeManagerCollection_Tests.cs" />
+    <Compile Include="Time\Stopwatch_Tests.cs" />
+    <Compile Include="Time\StopwatchManager_Tests.cs" />
+    <Compile Include="UI\ButttonEventArgs_Tests.cs" />
+    <Compile Include="UI\SingleTouchButtonController_Tests.cs" />
+    <Compile Include="UI\SingleTouchButtonController_Basic_Tests.cs" />
+    <Compile Include="UI\SingleTouchButtonController_AfterTouch_Tests.cs" />
+    <Compile Include="UI\TextLabel_Tests.cs" />
+    <Compile Include="UI\ButtonTextDefinition_Tests.cs" />
+    <Compile Include="UI\ButtonTextureDefinition_Tests.cs" />
+    <Compile Include="UI\GenericButton_Tests.cs" />
+    <Compile Include="UI\FormattedTextLabel_Tests.cs" />
+    <Compile Include="UI\StaticTexture_Tests.cs" />
+    <Compile Include="UI\ButtonBase_Tests.cs" />
+    <Compile Include="UI\MultiTouchButtonController_Tests.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ArbitraryPixel.Platform2D\ArbitraryPixel.Platform2D.csproj">
+      <Project>{128683e4-0d9a-428b-8ac7-02b4b8286013}</Project>
+      <Name>ArbitraryPixel.Platform2D</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\MSTest.TestAdapter.1.4.0\build\net45\MSTest.TestAdapter.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MSTest.TestAdapter.1.4.0\build\net45\MSTest.TestAdapter.props'))" />
+    <Error Condition="!Exists('..\packages\MSTest.TestAdapter.1.4.0\build\net45\MSTest.TestAdapter.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MSTest.TestAdapter.1.4.0\build\net45\MSTest.TestAdapter.targets'))" />
+    <Error Condition="!Exists('..\packages\MonoGame.Framework.WindowsDX.3.7.1.189\build\MonoGame.Framework.WindowsDX.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MonoGame.Framework.WindowsDX.3.7.1.189\build\MonoGame.Framework.WindowsDX.targets'))" />
+  </Target>
+  <Import Project="..\packages\MSTest.TestAdapter.1.4.0\build\net45\MSTest.TestAdapter.targets" Condition="Exists('..\packages\MSTest.TestAdapter.1.4.0\build\net45\MSTest.TestAdapter.targets')" />
+  <Import Project="..\packages\MonoGame.Framework.WindowsDX.3.7.1.189\build\MonoGame.Framework.WindowsDX.targets" Condition="Exists('..\packages\MonoGame.Framework.WindowsDX.3.7.1.189\build\MonoGame.Framework.WindowsDX.targets')" />
+</Project>

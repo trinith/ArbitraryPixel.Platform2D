@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{128683E4-0D9A-428B-8AC7-02B4B8286013}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ArbitraryPixel.Platform2D</RootNamespace>
+    <AssemblyName>ArbitraryPixel.Platform2D</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>Profile44</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\..\bin\ArbitraryPixel.Platform2D.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Animation\AnimationCollection.cs" />
+    <Compile Include="Animation\FloatAnimationFactory.cs" />
+    <Compile Include="Animation\AnimationSetPoint.cs" />
+    <Compile Include="Animation\FloatValueAnimation.cs" />
+    <Compile Include="Animation\IAnimationCollection.cs" />
+    <Compile Include="Animation\IAnimationFactory.cs" />
+    <Compile Include="Animation\IAnimationSetPoint.cs" />
+    <Compile Include="Animation\IValueAnimation.cs" />
+    <Compile Include="Assets\AssetBank.cs" />
+    <Compile Include="Assets\AssetLoader.cs" />
+    <Compile Include="Assets\AssetLoadMethod.cs" />
+    <Compile Include="Assets\IAssetBank.cs" />
+    <Compile Include="Assets\IAssetLoader.cs" />
+    <Compile Include="Audio\AudioManager.cs" />
+    <Compile Include="Audio\IAudioManager.cs" />
+    <Compile Include="Audio\IMusicController.cs" />
+    <Compile Include="Audio\ISoundController.cs" />
+    <Compile Include="Audio\MusicController.cs" />
+    <Compile Include="Audio\SoundController.cs" />
+    <Compile Include="BuildInfo\BuildInfoOverlayLayer.cs" />
+    <Compile Include="BuildInfo\BuildInfoOverlayLayerModel.cs" />
+    <Compile Include="BuildInfo\Factory\BuildInfoFactory.cs" />
+    <Compile Include="BuildInfo\Factory\IBuildInfoFactory.cs" />
+    <Compile Include="BuildInfo\IBuildInfoStore.cs" />
+    <Compile Include="Config\IConfigStore.cs" />
+    <Compile Include="Config\JsonConfigStore.cs" />
+    <Compile Include="Engine\EngineBase.cs" />
+    <Compile Include="Engine\ExceptionDefinitions_SimpleComponentContainer.cs" />
+    <Compile Include="Engine\ExternalActionEventArgs.cs" />
+    <Compile Include="Engine\IComponentContainer.cs" />
+    <Compile Include="Engine\IEngine.cs" />
+    <Compile Include="Engine\IUniqueIdGenerator.cs" />
+    <Compile Include="Engine\SimpleComponentContainer.cs" />
+    <Compile Include="Engine\UniqueIdGenerator.cs" />
+    <Compile Include="Entity\EntityBase.cs" />
+    <Compile Include="Entity\EntityContainerBase.cs" />
+    <Compile Include="Entity\GameEntityBase.cs" />
+    <Compile Include="Entity\IDrawableEntity.cs" />
+    <Compile Include="Entity\IEntityContainer.cs" />
+    <Compile Include="Entity\IEntity.cs" />
+    <Compile Include="Entity\IGameEntity.cs" />
+    <Compile Include="Entity\IHostedEntity.cs" />
+    <Compile Include="Entity\IContainedEntity.cs" />
+    <Compile Include="Entity\IUpdateableEntity.cs" />
+    <Compile Include="Layer\ILayer.cs" />
+    <Compile Include="Layer\LayerBase.cs" />
+    <Compile Include="Logging\ILogger.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scene\SceneBase.cs" />
+    <Compile Include="Scene\IScene.cs" />
+    <Compile Include="Sprites\ISpriteSheetSprite.cs" />
+    <Compile Include="Sprites\SpriteSheetSprite.cs" />
+    <Compile Include="Text\ExceptionDefinitions_TextObjectBuilder.cs" />
+    <Compile Include="Text\Factory\ITextFactory.cs" />
+    <Compile Include="Text\Factory\TextFactory.cs" />
+    <Compile Include="Text\ITextDefinition.cs" />
+    <Compile Include="Text\ITextFormatProcessor.cs" />
+    <Compile Include="Text\ITextFormatValueHandler.cs" />
+    <Compile Include="Text\ITextFormatValueHandlerManager.cs" />
+    <Compile Include="Text\ITextObjectRendererFactory.cs" />
+    <Compile Include="Text\ITextObjectBuilder.cs" />
+    <Compile Include="Text\ITextObject.cs" />
+    <Compile Include="Text\ITextObjectFactory.cs" />
+    <Compile Include="Text\ITextObjectRenderer.cs" />
+    <Compile Include="Text\SupportedFormat.cs" />
+    <Compile Include="Text\ExceptionDefinitions_TextFormatProcessor.cs" />
+    <Compile Include="Text\TextDefinition.cs" />
+    <Compile Include="Text\TextLineAlignment.cs" />
+    <Compile Include="Text\TextFormatProcessor.cs" />
+    <Compile Include="Text\TextFormatValueHandlerManager.cs" />
+    <Compile Include="Text\TextObject.cs" />
+    <Compile Include="Text\TextObjectBuilder.cs" />
+    <Compile Include="Text\TextObjectFactory.cs" />
+    <Compile Include="Text\TextObjectRenderer.cs" />
+    <Compile Include="Text\TextObjectRendererFactory.cs" />
+    <Compile Include="Text\ValueHandlers\ColourValueHandler.cs" />
+    <Compile Include="Text\ValueHandlers\DecimalValueHandler.cs" />
+    <Compile Include="Text\ValueHandlers\ExceptionDefinitions_InvalidValueFormats.cs" />
+    <Compile Include="Text\ValueHandlers\StringValueHandler.cs" />
+    <Compile Include="Text\ValueHandlers\TextLineAlignmentValueHandler.cs" />
+    <Compile Include="Theme\ITheme.cs" />
+    <Compile Include="Theme\IThemeManager.cs" />
+    <Compile Include="Theme\IThemeManagerCollection.cs" />
+    <Compile Include="Theme\ThemeBase.cs" />
+    <Compile Include="Theme\ThemeManagerBase.cs" />
+    <Compile Include="Theme\ThemeManagerCollection.cs" />
+    <Compile Include="Time\IStopwatch.cs" />
+    <Compile Include="Time\IStopwatchFactory.cs" />
+    <Compile Include="Time\IStopwatchManager.cs" />
+    <Compile Include="Time\Stopwatch.cs" />
+    <Compile Include="Time\StopwatchFactory.cs" />
+    <Compile Include="Time\StopwatchManager.cs" />
+    <Compile Include="UI\ButtonObjectDefinitionFactory.cs" />
+    <Compile Include="UI\ButtonTextDefinition.cs" />
+    <Compile Include="UI\ButtonTextureDefinition.cs" />
+    <Compile Include="UI\Controller\ButtonControllerBase.cs" />
+    <Compile Include="UI\Controller\MultiTouchButtonController.cs" />
+    <Compile Include="UI\Controller\SingleTouchButtonController.cs" />
+    <Compile Include="UI\Factory\IButtonControllerFactory.cs" />
+    <Compile Include="UI\Factory\MultiTouchButtonControllerFactory.cs" />
+    <Compile Include="UI\Factory\SingleTouchButtonControllerFactory.cs" />
+    <Compile Include="UI\Factory\UIObjectFactory.cs" />
+    <Compile Include="UI\FormattedTextLabel.cs" />
+    <Compile Include="UI\Controller\IButtonController.cs" />
+    <Compile Include="UI\IButtonObjectDefinition.cs" />
+    <Compile Include="UI\IButtonObjectDefinitionFactory.cs" />
+    <Compile Include="UI\IButtonTextDefinition.cs" />
+    <Compile Include="UI\IButtonTextureDefinition.cs" />
+    <Compile Include="UI\GenericButton.cs" />
+    <Compile Include="UI\ButtonBase.cs" />
+    <Compile Include="UI\ButtonEventArgs.cs" />
+    <Compile Include="UI\ButtonState.cs" />
+    <Compile Include="UI\IButton.cs" />
+    <Compile Include="UI\IFormattedTextLabel.cs" />
+    <Compile Include="UI\IGenericButton.cs" />
+    <Compile Include="UI\IStaticTexture.cs" />
+    <Compile Include="UI\ITextLabel.cs" />
+    <Compile Include="UI\Factory\IUIObjectFactory.cs" />
+    <Compile Include="UI\StaticTexture.cs" />
+    <Compile Include="UI\TextLabel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="ArbitraryPixel.Common">
+      <HintPath>..\..\bin\ArbitraryPixel.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ArbitraryPixel.Common.Advertising">
+      <HintPath>..\..\bin\ArbitraryPixel.Common.Advertising.dll</HintPath>
+    </Reference>
+    <Reference Include="ArbitraryPixel.Common.Audio">
+      <HintPath>..\..\bin\ArbitraryPixel.Common.Audio.dll</HintPath>
+    </Reference>
+    <Reference Include="ArbitraryPixel.Common.ContentManagement">
+      <HintPath>..\..\bin\ArbitraryPixel.Common.ContentManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="ArbitraryPixel.Common.Drawing">
+      <HintPath>..\..\bin\ArbitraryPixel.Common.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="ArbitraryPixel.Common.Graphics">
+      <HintPath>..\..\bin\ArbitraryPixel.Common.Graphics.dll</HintPath>
+    </Reference>
+    <Reference Include="ArbitraryPixel.Common.Input">
+      <HintPath>..\..\bin\ArbitraryPixel.Common.Input.dll</HintPath>
+    </Reference>
+    <Reference Include="ArbitraryPixel.Common.Json">
+      <HintPath>..\..\bin\ArbitraryPixel.Common.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="ArbitraryPixel.Common.Screen">
+      <HintPath>..\..\bin\ArbitraryPixel.Common.Screen.dll</HintPath>
+    </Reference>
+    <Reference Include="ArbitraryPixel.Common.SimpleFileSystem">
+      <HintPath>..\..\bin\ArbitraryPixel.Common.SimpleFileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework, Version=3.7.1.189, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MonoGame.Framework.Portable.3.7.1.189\lib\portable-net45+win8+wpa81\MonoGame.Framework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Sprites\Factory\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+</Project>

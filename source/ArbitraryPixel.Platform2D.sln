@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArbitraryPixel.Platform2D", "ArbitraryPixel.Platform2D\ArbitraryPixel.Platform2D.csproj", "{128683E4-0D9A-428B-8AC7-02B4B8286013}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{CE588F62-B882-464A-8944-6D770ED2ECCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArbitraryPixel.Platform2D_Tests", "ArbitraryPixel.Platform2D_Tests\ArbitraryPixel.Platform2D_Tests.csproj", "{240C8606-57CD-4B53-AD78-6A20436AC5A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{128683E4-0D9A-428B-8AC7-02B4B8286013}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{128683E4-0D9A-428B-8AC7-02B4B8286013}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{128683E4-0D9A-428B-8AC7-02B4B8286013}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{128683E4-0D9A-428B-8AC7-02B4B8286013}.Release|Any CPU.Build.0 = Release|Any CPU
+		{240C8606-57CD-4B53-AD78-6A20436AC5A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{240C8606-57CD-4B53-AD78-6A20436AC5A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{240C8606-57CD-4B53-AD78-6A20436AC5A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{240C8606-57CD-4B53-AD78-6A20436AC5A1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{240C8606-57CD-4B53-AD78-6A20436AC5A1} = {CE588F62-B882-464A-8944-6D770ED2ECCF}
+	EndGlobalSection
+EndGlobal
