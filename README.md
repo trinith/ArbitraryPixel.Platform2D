@@ -1,2 +1,5 @@
 # ArbitraryPixel.Platform2D
-Legacy repo for ArbitraryPixel.Platform2D code, providing abstraction and implementation layers for engine related components for CodeLogic.
+Legacy repo for ArbitraryPixel.Platform2D code, providing abstraction and implementation layers for engine related components for [CodeLogic](https://github.com/trinith/CodeLogic).
+
+Libraries:
+* [ArbitraryPixel.Common](https://github.com/trinith/ArbitraryPixel.Common)
