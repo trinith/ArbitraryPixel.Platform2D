@@ -3,3 +3,5 @@ Legacy repo for ArbitraryPixel.Platform2D code, providing abstraction and implem
 
 Libraries:
 * [ArbitraryPixel.Common](https://github.com/trinith/ArbitraryPixel.Common)
+
+NOTE: This code is offered freely for reference but is no longer being maintained.
